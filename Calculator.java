@@ -5,7 +5,7 @@ public class Calculator {
 		System.out.println(add(1, 2));
 		System.out.println(multiplication(3, 4));
 		System.out.println(subtraction(6, 5));
-		System.out.println(division(8, 2));
+		System.out.println(division(8, 16));
 	}
 
 	public static int add(int num1, int num2) {
@@ -20,12 +20,14 @@ public class Calculator {
 		return num5 - num6;
 	}
 	
-	public static int division(int num7, int num8) {
+	public static String division(double num7, double num8) {
+		String result;
 		if (num7 < num8) {
-            System.out.println("First parameter is smaller than second parameter");
+			result = "" + num7 / num8;
+			return result;
         } else {
-            System.out.println("Division cannot be performed");
+            result = ("Division cannot be performed");
+            return result;
         }
-		return num7 / num8;
 	}
 }
