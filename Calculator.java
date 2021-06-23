@@ -4,7 +4,7 @@ public class Calculator {
 	public static void main(String[] args) {
 		System.out.println(add(1, 2));
 		System.out.println(multiplication(3, 4));
-		System.out.println(sub(6, 5));
+		System.out.println(subtraction(6, 5));
 		System.out.println(division(8, 2));
 	}
 
@@ -16,7 +16,7 @@ public class Calculator {
 		return num3 * num4;
 	}
 	
-	public static int sub(int num5, int num6) {
+	public static int subtraction(int num5, int num6) {
 		return num5 - num6;
 	}
 	
